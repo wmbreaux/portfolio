@@ -1,0 +1,191 @@
+
+#header {
+    #left {
+        .logo-wrapper {
+            a {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    #right {
+        flex-direction: column;
+        .site-navigation {
+            .nav-btn {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 4rem;
+                height: 4rem;
+                border: none;
+                background: transparent;
+                &.open {
+                    &::after {
+                        transform: rotate(45deg);
+                        top: 2rem;
+                    }
+                    &::before {
+                        transform: rotate(-45deg);
+                    }
+                }
+                &:focus {
+                    outline: none !important;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                    width: 2rem;
+                    height: 3px;
+                    background: #555;
+                    border-radius: 4px;
+                    transition: transform 200ms, top 200ms ease-in-out;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 2rem;
+                    right: 1rem;
+                    width: 2rem;
+                    height: 3px;
+                    background: #555;
+                    border-radius: 4px;
+                    transition: transform 200ms ease-in-out;
+                }
+            }
+            .nav-item {
+                display: none;
+            }
+        }
+    }
+    .mobile-overlay {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        &.open {
+            display: flex !important;
+        }
+        .nav-item {
+            margin: .5rem .6rem;
+            font-size: 20px;
+            // display: none;
+            &:not(.active) {
+                color: #666;
+            }
+            &.active {
+                color: #333;
+                border-bottom: 1px solid #333;
+            }
+        }
+    }
+}
+
+#home {
+    flex-direction: column;
+    .container {
+        height: 56vw;
+        a {
+            img {
+                width: 80vw;
+            }
+        }
+    }
+}
+
+#about {
+    .section-1 {
+        flex-direction: column;
+        img {
+            margin-right: 0;
+            width: 85vw;
+        }
+
+    }
+    .section-2 {
+        flex-direction: column;
+        .images {
+            img {
+                margin-left: 0 !important;
+                width: 90vw;
+                height: 80vw;
+            }
+        }
+    }
+    .section-3 {
+
+    }
+    .section-4 {
+        img {
+            width: 70vw;
+            margin: 1rem 5.9vw 1rem 5.9vw;
+            float: none;
+        }
+    }
+    .section-5 {
+        
+    }
+}
+
+#cv {
+    .section-2 {
+        flex-direction: column;
+        h2 {
+            margin-top: 5rem !important;
+        }
+        .right {
+            margin-left: 0;
+        }
+    }
+}
+
+#razzou {
+    .section-1 {
+        div {
+            flex-direction: column;
+            img {
+                width: 80vw;
+                margin: 1.2rem 0;
+            }
+        }
+    }
+    .section-2 {
+        img {
+            float: none;
+            width: 80vw;
+        }
+    }
+    .section-3 {
+        div {
+            flex-wrap: wrap;
+            img {
+                width: 40vw;
+                height: 25vw;
+            }
+        }
+    }
+}
+
+#activate {
+    .section-4 {
+        .container {
+            display: none;
+        }
+        .small {
+            display: block;
+        }
+        img {
+            width: 88vw;
+            margin-top: 5rem;
+            .big {
+                display: none;
+            }
+            .small {
+                display: inline-block;
+            }
+        }
+        div {
+            margin: 2rem 0;
+        }
+    }
+}

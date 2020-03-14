@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WESLEYBREAUX.COM</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:type" content="website" />
+    <meta name="description" content="Wesley Breaux Personal Website" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="public/styles/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+    <link rel="manifest" href="public/site.webmanifest">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div id="left">
+            <div class="logo-wrapper">
+                <div class="site-title" role="heading" aria-level="1"><a href="./index.html">WESLEYBREAUX.COM</a></div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="nav-wrapper">
+                <nav class="site-navigation" role="navigation" aria-label="site navigation">
+                    <button class="nav-btn" type="button" onclick="openMobileNav()" aria-label="open menu"></button>
+                    <a id="index-nav" class="nav-item" href="./index.html">
+                        <span>Work</span>
+                    </a>
+                    <a id="about-nav" class="nav-item" href="./about.html">
+                        <span>About</span>
+                    </a>
+                    <a id="cv-nav" class="nav-item" href="./cv.html">
+                        <span>CV</span>
+                    </a>
+                    <a id="razzou-nav" class="nav-item" href="./razzou-dating.html">
+                        <span>Razzou</span>
+                    </a>
+                    <a id="activate-nav" class="nav-item" href="./activate-app.html">
+                        <span>Activate</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div class="mobile-overlay">
+            <a id="index-nav-m" class="nav-item" href="./index.html">
+                <span>Work</span>
+            </a>
+            <a id="about-nav-m" class="nav-item" href="./about.html">
+                <span>About</span>
+            </a>
+            <a id="cv-nav-m" class="nav-item" href="./cv.html">
+                <span>CV</span>
+            </a>
+            <a id="razzou-nav-m" class="nav-item" href="./razzou-dating.html">
+                <span>Razzou</span>
+            </a>
+            <a id="activate-nav-m" class="nav-item" href="./activate-app.html">
+                <span>Activate</span>
+            </a>
+        </div>
+    </header>
+
+    <div id="home" role="main">
+        <div class="container">
+            <a href="./activate-app.html">
+                <img src="./public/images/bridg.jpg" alt="Bridg App">
+                <div class="overlay"><span>The Activate App</span></div>
+            </a>
+        </div>
+        <div class="container">
+            <a href="./razzou-dating.html">
+                <img src="./public/images/razzou.jpg" alt="Razzou Dating App">
+
+                <div class="overlay"><span>Razzou Dating</span></div>
+            </a>
+        </div>
+    </div>
+    <footer id="footer" role="contentinfo">
+        <div>
+            <p>wesleymbreaux@gmail.com</p>
+        </div>
+    </footer>
+    <script src="./public/index.js"></script>
+</body>
+
+</html>

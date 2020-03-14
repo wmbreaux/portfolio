@@ -1,0 +1,13 @@
+There are four media queries based on viewport size: Desktop/laptop, large tablet, small tablet, and mobile 
+devices. On any viewport smaller than 730 pixels (small tablet and below), the navigation bar will collapse into a 
+button that creates a dropdown menu. Most of the images on the site are sized based on the viewport width 
+(vw units) so that they scale based on device size. There are several uses of flexbox such as the landing page 
+where, on desktop size (1224 pixels and up), multiple images are displayed in a row (flex-direction: row), but on 
+smaller devices will be moved into a column (flex-direction: column) and made larger to fit the screen so that 
+they are more easily viewable. The middle section of the Activate App page, below the "Ideate" header, uses a CSS 
+grid to align the images and text alongside each other. On smaller devices, this grid is changed into a column of 
+images with their corresponding text below them, to make everything easier to see.
+
+The axe validator runs successfully, the only elements that have warnings are iframe elements (the embedded
+Youtube videos), which have captions built-in, and the landing page text that covers the images, which is black on 
+white text. The content within iframe elements can't be changed because they are being imported by Youtube.

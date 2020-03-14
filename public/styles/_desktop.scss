@@ -1,0 +1,42 @@
+
+
+#header {
+    #right {
+        .site-navigation {
+            display: flex;
+            flex-direction: row;
+            .nav-btn {
+                display: none;
+            }
+            .nav-item {
+                margin: 0 .6rem;
+                font-size: 14px;
+            }
+        }
+    }
+    .mobile-overlay {
+        display: none !important;
+    }
+}
+
+#home {
+    flex-direction: row;
+}
+
+#about {
+    .section-1 {
+        flex-direction: row;
+    }
+    .section-2 {
+        flex-direction: row;
+    }
+    .section-3 {
+        
+    }
+    .section-4 {
+        
+    }
+    .section-5 {
+        
+    }
+}
